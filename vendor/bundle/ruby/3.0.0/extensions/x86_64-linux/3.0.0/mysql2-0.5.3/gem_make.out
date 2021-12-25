@@ -1,0 +1,77 @@
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.3/ext/mysql2
+/usr/local/rbenv/versions/3.0.2/bin/ruby -I /usr/local/rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211125-3354-gdlirz.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+-----
+Using mysql_config at /usr/bin/mysql_config
+-----
+checking for mysql.h... yes
+checking for errmsg.h... yes
+checking for SSL_MODE_DISABLED in mysql.h... yes
+checking for SSL_MODE_PREFERRED in mysql.h... yes
+checking for SSL_MODE_REQUIRED in mysql.h... yes
+checking for SSL_MODE_VERIFY_CA in mysql.h... yes
+checking for SSL_MODE_VERIFY_IDENTITY in mysql.h... yes
+checking for MYSQL.net.vio in mysql.h... yes
+checking for MYSQL.net.pvio in mysql.h... no
+checking for MYSQL_ENABLE_CLEARTEXT_PLUGIN in mysql.h... yes
+checking for SERVER_QUERY_NO_GOOD_INDEX_USED in mysql.h... yes
+checking for SERVER_QUERY_NO_INDEX_USED in mysql.h... yes
+checking for SERVER_QUERY_WAS_SLOW in mysql.h... yes
+checking for MYSQL_OPTION_MULTI_STATEMENTS_ON in mysql.h... yes
+checking for MYSQL_OPTION_MULTI_STATEMENTS_OFF in mysql.h... yes
+checking for my_bool in mysql.h... no
+-----
+Setting libpath to /usr/lib64/mysql
+-----
+creating Makefile
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\= clean
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\=
+compiling client.c
+client.c: 関数 ‘rb_mysql_query’ 内:
+client.c:787:14: 警告: 互換性のないポインタ型から 1 番目の ‘rb_rescue2’ の引数に渡しています [-Wincompatible-pointer-types]
+   rb_rescue2(do_send_query, (VALUE)&args, disconnect_and_raise, self, rb_eException, (VALUE)0);
+              ^~~~~~~~~~~~~
+In file included from /usr/local/rbenv/versions/3.0.2/include/ruby-3.0.0/ruby/ruby.h:38,
+                 from /usr/local/rbenv/versions/3.0.2/include/ruby-3.0.0/ruby.h:38,
+                 from ./mysql2_ext.h:10,
+                 from client.c:1:
+/usr/local/rbenv/versions/3.0.2/include/ruby-3.0.0/ruby/internal/iterator.h:51:18: 備考: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(void *)’ {aka ‘long unsigned int (*)(void *)’}
+ VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+                  ^~~~~~~~~~~~~~~
+client.c:795:16: 警告: 互換性のないポインタ型から 1 番目の ‘rb_rescue2’ の引数に渡しています [-Wincompatible-pointer-types]
+     rb_rescue2(do_query, (VALUE)&async_args, disconnect_and_raise, self, rb_eException, (VALUE)0);
+                ^~~~~~~~
+In file included from /usr/local/rbenv/versions/3.0.2/include/ruby-3.0.0/ruby/ruby.h:38,
+                 from /usr/local/rbenv/versions/3.0.2/include/ruby-3.0.0/ruby.h:38,
+                 from ./mysql2_ext.h:10,
+                 from client.c:1:
+/usr/local/rbenv/versions/3.0.2/include/ruby-3.0.0/ruby/internal/iterator.h:51:18: 備考: expected ‘VALUE (*)(VALUE)’ {aka ‘long unsigned int (*)(long unsigned int)’} but argument is of type ‘VALUE (*)(void *)’ {aka ‘long unsigned int (*)(void *)’}
+ VALUE rb_rescue2(VALUE(*)(VALUE),VALUE,VALUE(*)(VALUE,VALUE),VALUE,...);
+                  ^~~~~~~~~~~~~~~
+client.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-used-but-marked-unused’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-static-in-inline’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-reserved-id-macro’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-missing-variable-declarations’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-documentation-unknown-command’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-disabled-macro-expansion’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-covered-switch-default’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-conditional-uninitialized’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-self-assign’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-parentheses-equality’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-constant-logical-operand’ です
+compiling infile.c
+compiling mysql2_ext.c
+compiling result.c
+compiling statement.c
+linking shared-object mysql2/mysql2.so
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.3/ext/mysql2
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 mysql2.so ./.gem.20211125-3354-wuzahk/mysql2

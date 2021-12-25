@@ -1,0 +1,7 @@
+development:
+  adapter: mysql2
+  database: quiz_db
+  host: localhost
+  username: root
+  password: 49022375
+  encoding: utf8

@@ -1,0 +1,59 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (6.1.4.1)
+      activesupport (= 6.1.4.1)
+    activerecord (6.1.4.1)
+      activemodel (= 6.1.4.1)
+      activesupport (= 6.1.4.1)
+    activesupport (6.1.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    concurrent-ruby (1.1.9)
+    i18n (1.8.11)
+      concurrent-ruby (~> 1.0)
+    ipaddr (1.2.3)
+    json (2.6.1)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    mini_mime (1.1.2)
+    minitest (5.14.4)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    mysql2 (0.5.3)
+    openssl (2.2.1)
+      ipaddr
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    recaptcha (5.8.1)
+      json
+    ruby2_keywords (0.0.5)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    webrick (1.7.0)
+    zeitwerk (2.5.1)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  activerecord
+  mail
+  mysql2
+  openssl
+  recaptcha
+  sinatra
+  webrick
+
+BUNDLED WITH
+   2.2.28

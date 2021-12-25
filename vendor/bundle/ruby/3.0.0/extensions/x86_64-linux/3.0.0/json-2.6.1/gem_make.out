@@ -1,0 +1,13 @@
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/json-2.6.1/ext/json
+/usr/local/rbenv/versions/3.0.2/bin/ruby -I /usr/local/rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211223-2319-kk4dob.rb extconf.rb
+creating Makefile
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/json-2.6.1/ext/json
+make DESTDIR\= clean
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/json-2.6.1/ext/json
+make DESTDIR\=
+make: 'all' に対して行うべき事はありません.
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/json-2.6.1/ext/json
+make DESTDIR\= install

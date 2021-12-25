@@ -1,0 +1,117 @@
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/openssl-2.2.1/ext/openssl
+/usr/local/rbenv/versions/3.0.2/bin/ruby -I /usr/local/rbenv/versions/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211223-2319-l92nkf.rb extconf.rb
+checking for t_open() in -lnsl... no
+checking for socket() in -lsocket... no
+checking for openssl/ssl.h... yes
+checking for LIBRESSL_VERSION_NUMBER in openssl/opensslv.h... no
+checking for OpenSSL version >= 1.0.1 and < 3.0.0... yes
+checking for RAND_egd()... no
+checking for ENGINE_load_dynamic() in openssl/engine.h... yes
+checking for ENGINE_load_4758cca() in openssl/engine.h... no
+checking for ENGINE_load_aep() in openssl/engine.h... no
+checking for ENGINE_load_atalla() in openssl/engine.h... no
+checking for ENGINE_load_chil() in openssl/engine.h... no
+checking for ENGINE_load_cswift() in openssl/engine.h... no
+checking for ENGINE_load_nuron() in openssl/engine.h... no
+checking for ENGINE_load_sureware() in openssl/engine.h... no
+checking for ENGINE_load_ubsec() in openssl/engine.h... no
+checking for ENGINE_load_padlock() in openssl/engine.h... no
+checking for ENGINE_load_capi() in openssl/engine.h... no
+checking for ENGINE_load_gmp() in openssl/engine.h... no
+checking for ENGINE_load_gost() in openssl/engine.h... no
+checking for ENGINE_load_cryptodev() in openssl/engine.h... yes
+checking for EC_curve_nist2nid()... yes
+checking for X509_REVOKED_dup()... yes
+checking for X509_STORE_CTX_get0_store()... yes
+checking for SSL_CTX_set_alpn_select_cb()... yes
+checking for SSL_CTX_set1_curves_list(NULL, NULL) in openssl/ssl.h... yes
+checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... yes
+checking for SSL_get_server_tmp_key(NULL, NULL) in openssl/ssl.h... yes
+checking for SSL_is_server()... yes
+checking for SSL.ctx in openssl/ssl.h... no
+checking for CRYPTO_lock()... no
+checking for BN_GENCB_new()... yes
+checking for BN_GENCB_free()... yes
+checking for BN_GENCB_get_arg()... yes
+checking for EVP_MD_CTX_new()... yes
+checking for EVP_MD_CTX_free()... yes
+checking for HMAC_CTX_new()... yes
+checking for HMAC_CTX_free()... yes
+checking for X509_STORE_get_ex_data()... yes
+checking for X509_STORE_set_ex_data()... yes
+checking for X509_STORE_get_ex_new_index()... no
+checking for X509_CRL_get0_signature()... yes
+checking for X509_REQ_get0_signature()... yes
+checking for X509_REVOKED_get0_serialNumber()... yes
+checking for X509_REVOKED_get0_revocationDate()... yes
+checking for X509_get0_tbs_sigalg()... yes
+checking for X509_STORE_CTX_get0_untrusted()... yes
+checking for X509_STORE_CTX_get0_cert()... yes
+checking for X509_STORE_CTX_get0_chain()... yes
+checking for OCSP_SINGLERESP_get0_id()... yes
+checking for SSL_CTX_get_ciphers()... yes
+checking for X509_up_ref()... yes
+checking for X509_CRL_up_ref()... yes
+checking for X509_STORE_up_ref()... yes
+checking for SSL_SESSION_up_ref()... yes
+checking for EVP_PKEY_up_ref()... yes
+checking for SSL_CTX_set_tmp_ecdh_callback(NULL, NULL) in openssl/ssl.h... no
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+checking for SSL_CTX_get_security_level()... yes
+checking for X509_get0_notBefore()... yes
+checking for SSL_SESSION_get_protocol_version()... yes
+checking for TS_STATUS_INFO_get0_status()... yes
+checking for TS_STATUS_INFO_get0_text()... yes
+checking for TS_STATUS_INFO_get0_failure_info()... yes
+checking for TS_VERIFY_CTS_set_certs()... yes
+checking for TS_VERIFY_CTX_set_store()... yes
+checking for TS_VERIFY_CTX_add_flags()... yes
+checking for TS_RESP_CTX_set_time_cb()... yes
+checking for EVP_PBE_scrypt()... yes
+checking for SSL_CTX_set_post_handshake_auth()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/openssl-2.2.1/ext/openssl
+make DESTDIR\= clean
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/openssl-2.2.1/ext/openssl
+make DESTDIR\=
+compiling openssl_missing.c
+compiling ossl.c
+compiling ossl_asn1.c
+compiling ossl_bio.c
+compiling ossl_bn.c
+compiling ossl_cipher.c
+compiling ossl_config.c
+compiling ossl_digest.c
+compiling ossl_engine.c
+compiling ossl_hmac.c
+compiling ossl_kdf.c
+compiling ossl_ns_spki.c
+compiling ossl_ocsp.c
+compiling ossl_pkcs12.c
+compiling ossl_pkcs7.c
+compiling ossl_pkey.c
+compiling ossl_pkey_dh.c
+compiling ossl_pkey_dsa.c
+compiling ossl_pkey_ec.c
+compiling ossl_pkey_rsa.c
+compiling ossl_rand.c
+compiling ossl_ssl.c
+compiling ossl_ssl_session.c
+compiling ossl_ts.c
+compiling ossl_x509.c
+compiling ossl_x509attr.c
+compiling ossl_x509cert.c
+compiling ossl_x509crl.c
+compiling ossl_x509ext.c
+compiling ossl_x509name.c
+compiling ossl_x509req.c
+compiling ossl_x509revoked.c
+compiling ossl_x509store.c
+linking shared-object openssl.so
+
+current directory: /home/cercil/repo/vendor/bundle/ruby/3.0.0/gems/openssl-2.2.1/ext/openssl
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 openssl.so ./.gem.20211223-2319-i7hhf7

@@ -171,6 +171,11 @@ get '/contentspage' do
     end
 end
 
+get '/ranking' do
+    @s=Rank.all.order(countCorrect: "desc")
+    erb :ranking
+end
+
 post '/quiz' do 
     r=Random.rand(1..10) #1-10の乱数を生成
     $rr=r
@@ -206,14 +211,16 @@ get '/end' do
     l=Rank.new
     f=Member.find($trans3)
     b=Time.now
-
-    ad=$trans3.sub!(/\@.*/m,"")
-    l.user_id=ad
+    ab=$trans3.dup
+    ab.sub!(/\@.*/m,"")
+    l.user_id=ab #rankingデータベースについて 学籍番号がPRIMARYだと何回も同じ人がやった場合にnot uniqueのためだめ
     l.countCorrect=f.countcorrect
     l.time=b 
+    l.token=[*'A'..'Z', *'a'..'z', *0..9].shuffle[0..6].join 
 
     f.countcorrect=0
     f.countquiz=0
+    l.save
     redirect '/contentspage'
 end
 

@@ -145,7 +145,7 @@ post '/auth3' do
         redirect '/contentspage' 
     elsif $trans2<a 
         redirect '/expired'
-    else #一緒じゃないから最初からやり直しとかいうクソ仕様（要改善）
+    else #一緒じゃないから最初からやり直し
         session[:login_flag]=false
         #puts "aaaa"
         redirect '/failure'

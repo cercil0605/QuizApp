@@ -15,8 +15,8 @@ set :sessions,
 
 
 Recaptcha.configure do |config|
-    config.site_key  = '6LetYQAcAAAAAGjrh2w2cBq_mm8BEUzFozZwZn0B'
-    config.secret_key = '6LetYQAcAAAAAIa8d7skdjSyx3JQXI7yCCYw6Lt_'
+    config.site_key  = '*********'
+    config.secret_key = '*********'
     end
 include Recaptcha::Adapters::ControllerMethods
 include Recaptcha::Adapters::ViewMethods
